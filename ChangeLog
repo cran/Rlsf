@@ -1,0 +1,255 @@
+2005-10-03 10:51  tag RELEASE_1_0_0
+
+2005-10-03 10:51  warnes
+
+	* DESCRIPTION: Update version number for 1st public release
+
+2005-10-03 10:51  warnes
+
+	* man/: lsf.numcpu.Rd, lsf.submit.Rd: Quote underscores to fix
+	  latex errors
+
+2005-10-03 10:50  warnes
+
+	* src/README: Unneded file
+
+2005-03-24 08:38  warnes
+
+	* DESCRIPTION: Update version number
+
+2005-03-24 08:12  warnes
+
+	* R/lsf.parRapply.R: Fix typo that prevented exit from
+	  lsf.parRapply if any job state was unknown.
+
+2005-03-18 22:44  warnes
+
+	* DESCRIPTION, R/lsf.apply.model.R, R/lsf.parRapply.R,
+	  man/lsf.parRapply.Rd: - Fixed: Calculation of the number of jobs
+	  was rounding in the wrong direction, resulting   in 'leftover'
+	  rows of unprocessed data in lsf.apply.model() and
+	  lsf.parRapply().  - Modified the man page so that one of the
+	  examples doesn't divide into perfectly   sized chunks as a
+	  regression test.
+
+2005-03-02 15:26  warnes
+
+	* R/lsf.parRapply.R: Add a local definition for splitRows since the
+	  one in the snow library uses 'F' instead of 'FALSE' causing R CMD
+	  check to fail for us.
+
+2005-03-02 14:47  warnes
+
+	* DESCRIPTION, R/lsf.apply.model.R, R/lsf.parRapply.R,
+	  R/lsf.run.job.R, R/test.R, man/lsf.parRapply.Rd,
+	  man/lsf.run.job.Rd, man/lsf.submit.Rd: Resolve 'R CMD check'
+	  errors/warnings
+
+2005-02-22 19:49  csmith
+
+	* man/lsf.get.result.Rd: - some doc changes
+
+2005-02-22 19:45  csmith
+
+	* R/: lsf.kill.job.R, lsf.suspend.job.R: - some cosmetic changes
+
+2005-02-22 13:07  warnes
+
+	* DESCRIPTION: update version number.
+
+2005-02-21 23:23  warnes
+
+	* man/scat.Rd: Remove extraneous backslash.
+
+2005-02-21 23:20  warnes
+
+	* man/: lsf.numcpu.Rd, lsf.submit.Rd: Incorrect comment character.
+
+2005-02-21 23:18  warnes
+
+	* man/lsf.run.job.Rd: Add missing close brace.
+
+2005-02-21 23:10  warnes
+
+	* DESCRIPTION, R/lsf.apply.model.R, R/lsf.job.status.R,
+	  R/lsf.kill.job.R, R/lsf.parRapply.R, R/lsf.resume.job.R,
+	  R/lsf.submit.R, R/lsf.suspend.job.R, man/lsf.control.job.Rd,
+	  man/lsf.parRapply.Rd, src/Rlsf.c: General cleanup.
+
+2005-02-21 22:31  warnes
+
+	* man/parRapply.Rd: Function has been renamed lsf.parRapply
+
+2005-02-21 21:20  warnes
+
+	* R/Last.R, R/clusterExport.R, R/makeLSFcluster.R, R/null.R,
+	  R/parRapply.R, R/parse822.R, man/DEBUG.Rd, man/clusterExport.Rd,
+	  man/clusterFSExport.Rd, man/compute.means.Rd,
+	  man/par.apply.model.Rd, man/parse822.Rd, man/unmatrix.Rd: Remove
+	  extraneous files.
+
+2005-02-21 15:51  csmith
+
+	* man/: lsf.get.result.Rd, lsf.job.status.Rd, lsf.run.job.Rd,
+	  lsf.submit.Rd: - documentation of Rlsf lsf.* functions
+
+2005-02-21 14:01  warnes
+
+	* R/options.R: Add a global 'option' setting the number of matrix
+	  rows to include in each lsf job created by parRapply.
+
+2005-02-21 13:51  warnes
+
+	* DESCRIPTION, R/par.apply.model.R, R/parRapply.R, R/test.R: Update
+	  CVS to match curretly installed & running version.
+
+2005-02-21 13:50  warnes
+
+	* R/lsf.apply.model.R: Rename par.apply.model to lsf.apply.model.
+
+2005-02-19 16:50  csmith
+
+	* man/lsf.numcpu.Rd: - updated documentation
+
+2005-01-31 13:51  warnes
+
+	* R/: lsf.get.result.R, par.apply.model.R, parRapply.R, test.R:
+	  Many fixes, also rename par.apply.model to lsf.apply.model.
+
+2005-01-11 17:15  warnes
+
+	* DESCRIPTION, R/lsf.submit.R, R/null.R, R/par.apply.model.R,
+	  R/parRapply.R, R/test.R, inst/RunLsfJob: Modify code to allow
+	  passing packages that need to be loaded, provide a nice wrapper
+	  ('lsf.parRapply', 'lsf.parCapply') etc.
+
+2004-11-10 21:08  csmith
+
+	* R/makeLSFcluster.R: - makeLSFcluster starts an Rmpi snow cluster
+	  of lsf.numcpu() slaves
+
+2004-11-10 20:56  csmith
+
+	* R/: lsf.numcpu.R, makeLSFcluster.R: - slight mods to
+	  makeLSFcluster to use lsf.numcpu only - lsf.numcpu does not take
+	  a default. Either LSB_HOSTS is set, or not
+
+2004-11-10 20:14  csmith
+
+	* R/lsf.run.job.R, R/lsf.submit.R, inst/RunLsfJob, src/Rlsf.c: -
+	  support multi cpu jobs using Rmpi and LAM-MPI
+
+2004-11-10 19:08  csmith
+
+	* man/par.apply.model.Rd: - changed numcpu.lsf to lsf.numcpu
+
+2004-11-10 19:07  csmith
+
+	* man/: lsf.numcpu.Rd, numcpu.lsf.Rd: - changed name of numcpu.lsf
+	  to lsf.numcpu
+
+2004-11-10 18:56  csmith
+
+	* inst/RunLsfJob: - evaluate function in a try block
+
+2004-11-10 18:51  csmith
+
+	* src/Rlsf.c: - argh ... typo
+
+2004-11-10 18:49  csmith
+
+	* src/: .cvsignore, Rlsf.c: - have to set rLimits in the submit
+	  structure to "unlimited"
+
+2004-11-10 18:27  csmith
+
+	* configure: - check for libnsl (needed by liblsf on some
+	  platforms)
+
+2004-11-10 18:20  csmith
+
+	* R/: lsf.get.result.R, lsf.numcpu.R, lsf.run.job.R, lsf.submit.R,
+	  numcpu.lsf.R, par.apply.model.R: - Changed parameter passing
+	  mechanism - Added debug flag so that data and output files aren't
+	  removed - Changed numcpu.lsf to lsf.numcpu
+
+2004-11-10 18:18  csmith
+
+	* configure: - oops ... shell scripting stupidity
+
+2004-11-10 18:16  csmith
+
+	* cleanup, configure: - new configure script
+
+2004-11-10 18:14  csmith
+
+	* src/Makevars: - now using configure script to generate Makevars
+
+2004-11-10 18:14  csmith
+
+	* src/Rlsf.c: - added debug flag
+
+2004-11-10 14:56  warnes
+
+	* R/lsf.submit.R: Changes to ensure arguments are evaluated before
+	  being passed through and that explicitly passed variables are
+	  properly passed.
+
+2004-11-10 14:56  csmith
+
+	* inst/RunLsfJob: - changed to simplify the function calling and
+	  argument passing
+
+2004-11-10 13:44  warnes
+
+	* R/lsf.submit.R: Some changes to savelist and argument handling.
+
+2004-11-10 01:55  csmith
+
+	* R/lsf.run.job.R, R/lsf.submit.R, inst/RunLsfJob: - added support
+	  for passing argument lists to the remote function
+
+2004-11-09 21:06  csmith
+
+	* R/Last.R: - Rmpi stuff getting in the way right now
+
+2004-11-09 20:58  csmith
+
+	* R/First.lib.R, R/Last.lib.R, R/lsf.get.result.R,
+	  R/lsf.job.status.R, R/lsf.run.job.R, R/lsf.submit.R,
+	  inst/RunLsfJob, src/.cvsignore, src/Makevars, src/Rlsf.c: -
+	  Implemented functions to allow submission of R code as a batch
+	  job
+
+2004-10-21 14:38  warnes
+
+	* R/First.lib.R, R/Last.R, R/clusterExport.R, R/makeLSFcluster.R,
+	  R/par.apply.model.R, R/parRapply.R, R/parse822.R, R/scat.R,
+	  R/test.R, man/DEBUG.Rd, man/clusterExport.Rd,
+	  man/clusterFSExport.Rd, man/compute.means.Rd,
+	  man/par.apply.model.Rd, man/parRapply.Rd, man/parse822.Rd,
+	  man/scat.Rd, man/unmatrix.Rd: Add much in an attempt to make this
+	  into a real package.
+
+2004-10-21 14:36  warnes
+
+	* man/numcpu.lsf.Rd:
+
+	  Add test code so that R CMD check passes.
+
+2004-09-09 13:00  warnes
+
+	* R/numcpu.lsf.R, man/numcpu.lsf.Rd: Add CVS headers.
+
+2004-09-09 12:57  tag initial
+
+2004-09-09 12:57  warnes
+
+	* DESCRIPTION, R/numcpu.lsf.R, man/numcpu.lsf.Rd, src/README:
+	  Initial revision
+
+2004-09-09 12:57  warnes
+
+	* DESCRIPTION, R/numcpu.lsf.R, man/numcpu.lsf.Rd, src/README:
+	  initial checkin
+

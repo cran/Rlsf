@@ -1,0 +1,16 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Rlsf.c"
+    :major-mode 'c-mode
+    :tags '(("lsf/lsbatch.h" include (:system-flag t) nil [59 83]) ("R.h" include (:system-flag t) nil [84 98]) ("Rdefines.h" include (:system-flag t) nil [99 120]) ("R_ext/PrtUtil.h" include (:system-flag t) nil [121 147]) ("AsInt" function (:prototype-flag t :arguments (("" variable (:type "int") (reparse-symbol arg-sub-list) [160 164])) :type ("SEXP" type (:type "class") nil nil)) nil [149 165]) ("lsf_initialize" function (:arguments (("" variable (:type "void") (reparse-symbol arg-sub-list) [187 192])) :type ("SEXP" type (:type "class") nil nil)) nil [167 341]) ("lsf_job_submit" function (:arguments (("sexp_debug" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [363 379]) ("sexp_command" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [380 398]) ("sexp_ncpus" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [399 415])) :type ("SEXP" type (:type "class") nil nil)) nil [343 1269]) ("lsf_job_status" function (:arguments (("sexp_jobid" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1291 1307])) :type ("SEXP" type (:type "class") nil nil)) nil [1271 3074]) ("AsInt" function (:arguments (("x" variable (:type "int") (reparse-symbol arg-sub-list) [3093 3099])) :type ("SEXP" type (:type "class") nil nil)) nil [3082 3221]) ("showArgs" function (:arguments (("args" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3237 3247])) :type ("SEXP" type (:type "class") nil nil)) nil [3223 3979]) ("lsf_kill_job" function (:arguments (("sexp_jobid" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3999 4015])) :type ("SEXP" type (:type "class") nil nil)) nil [3981 4241]) ("lsf_suspend_job" function (:arguments (("sexp_jobid" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4264 4280])) :type ("SEXP" type (:type "class") nil nil)) nil [4243 4509]) ("lsf_resume_job" function (:arguments (("sexp_jobid" variable (:type ("SEXP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4531 4547])) :type ("SEXP" type (:type "class") nil nil)) nil [4511 4775]))
+    :file "Rlsf.c"
+    :pointmax 4778
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0beta3"
+  :semanticdb-version "2.0beta3"
+  )
