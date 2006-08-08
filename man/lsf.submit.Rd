@@ -1,4 +1,4 @@
-% $Id: lsf.submit.Rd,v 1.4 2005/10/03 14:51:35 warnes Exp $
+% $Id: lsf.submit.Rd 682 2005-10-03 14:51:35Z warnes $
 
 \name{lsf.submit}
 \alias{lsf.submit}

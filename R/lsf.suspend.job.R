@@ -1,4 +1,4 @@
-# $Id: lsf.suspend.job.R,v 1.2 2005/02/23 00:45:37 csmith Exp $
+# $Id: lsf.suspend.job.R 556 2005-02-23 00:45:37Z csmith $
 
 "lsf.suspend.job" <-
   function(job)

@@ -64,7 +64,7 @@ lsf.apply.model(fun, matrix, ..., njobs,
   \code{x}.  As each call to \code{fun} is wrapped in a \code{try}
   statement, the returned object may contain \code{try-error} objects.
 }
-\author{ Gregory R. Warnes \email{gregory.r.warnes@pfizer.com}}
+\author{ Gregory R. Warnes \email{warnes@bst.rochester.edu}}
 \seealso{ \code{\link[Rlsf]{lsf.apply.model}}, \code{\link[Rlsf]{lsf.submit}} }
 \examples{
 

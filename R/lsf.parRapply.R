@@ -1,5 +1,5 @@
 
-                                        # $Id: lsf.parRapply.R,v 1.5 2005/03/24 13:12:32 warnes Exp $
+                                        # $Id: lsf.parRapply.R 580 2005-03-24 13:12:32Z warnes $
 
 lsf.parCapply <- function(x, ...)
   lsf.parRapply( t(x), ...)

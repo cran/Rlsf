@@ -18,4 +18,4 @@ installed via the standard R mechananism:
 	R CMD INSTALL Rlsf
 
 ========
-$Id: README,v 1.1 2005/10/03 15:05:41 warnes Exp $
+$Id: README 685 2005-10-03 15:05:41Z warnes $

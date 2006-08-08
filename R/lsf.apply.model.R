@@ -1,4 +1,4 @@
-# $Id: lsf.apply.model.R,v 1.4 2005/03/19 03:44:13 warnes Exp $
+# $Id: lsf.apply.model.R 574 2005-03-19 03:44:13Z warnes $
 
 lsf.apply.model <- function(fun,
                             matrix,

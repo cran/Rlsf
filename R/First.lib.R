@@ -1,4 +1,4 @@
-# $Id: First.lib.R,v 1.2 2004/11/10 01:58:13 csmith Exp $
+# $Id: First.lib.R 475 2004-11-10 01:58:21Z csmith $
 
 .First.lib <- function(libname, pkgname)
 {

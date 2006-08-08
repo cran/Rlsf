@@ -1,4 +1,4 @@
-# $Id: Last.lib.R,v 1.1 2004/11/10 01:58:20 csmith Exp $
+# $Id: Last.lib.R 475 2004-11-10 01:58:21Z csmith $
 
 .Last.lib <- function(libpath)
   {

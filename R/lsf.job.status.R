@@ -1,4 +1,4 @@
-# $Id: lsf.job.status.R,v 1.2 2005/02/22 04:10:44 warnes Exp $
+# $Id: lsf.job.status.R 550 2005-02-22 04:10:44Z warnes $
 
 "lsf.job.status" <-
   function(job)
