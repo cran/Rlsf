@@ -1,6 +1,11 @@
-/* $Id: Rlsf.c 550 2005-02-22 04:10:44Z warnes $ */
+/* $Id: Rlsf.c,v 1.6 2005/02/22 04:10:44 warnes Exp $ */
+
+#include <stdlib.h>
+#include <netdb.h>
+#include <signal.h>
 
 #include <lsf/lsbatch.h>
+
 #include <R.h>
 #include <Rdefines.h>
 #include <R_ext/PrtUtil.h>
@@ -17,6 +22,9 @@ lsf_initialize(void)
   else {
     return AsInt(0);
   } 
+  if (putenv("BSUB_QUIET=1")) {
+    return AsInt(0);
+  }
 }
 
 SEXP
@@ -40,9 +48,6 @@ lsf_job_submit(SEXP sexp_debug, SEXP sexp_command, SEXP sexp_ncpus)
   submitRequest.numProcessors = INTEGER(sexp_ncpus)[0];
   submitRequest.maxNumProcessors = INTEGER(sexp_ncpus)[0];
 
-  if (setenv("BSUB_QUIET", "1", 1)) {
-    return AsInt(0);
-  }
   jobId = lsb_submit(&submitRequest, &submitReply);
   if (jobId == -1) {
     Rprintf("lsf_job_submit: lsb_submit: %s\n", lsb_sysmsg());

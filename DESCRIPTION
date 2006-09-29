@@ -1,6 +1,7 @@
 Package: Rlsf
 Title: Interface to the LSF Queuing System
-Version: 1.0.2
+Date: 2006-09-29
+Version: 1.0.3
 Author: Chris Smith <csmith@platform.com> and
         Gregory Warnes <warnes@bst.rochester.edu>
 Description: This package provides functions for using R with the
@@ -9,4 +10,4 @@ Depends: snow, gdata
 SystemRequirements: Platform LSF development libraries
 Maintainer: Chris Smith <csmith@platform.com>
 License: LGPL (see <http://www.opensource.org/licenses/lgpl-license.php>).
-Packaged: Tue Aug  8 19:53:41 2006; warnes
+Packaged: Fri Sep 29 10:43:04 2006; csmith
