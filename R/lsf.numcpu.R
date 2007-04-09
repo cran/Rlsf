@@ -1,4 +1,4 @@
-# $Id: lsf.numcpu.R 493 2004-11-11 01:56:22Z csmith $
+# $Id: lsf.numcpu.R,v 1.2 2006/12/15 15:21:23 kuhna03 Exp $
 
 "lsf.numcpu" <-
 function()

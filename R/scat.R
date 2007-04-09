@@ -1,4 +1,4 @@
-# $Id: scat.R 468 2004-10-21 18:38:04Z warnes $
+# $Id: scat.R,v 1.2 2006/12/15 15:21:23 kuhna03 Exp $
 
 # cat to stdout and immediately flush
 scat <- function(...)

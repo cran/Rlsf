@@ -1,4 +1,4 @@
-# $Id: lsf.kill.job.R 556 2005-02-23 00:45:37Z csmith $
+# $Id: lsf.kill.job.R,v 1.2 2006/12/15 15:21:23 kuhna03 Exp $
 
 "lsf.kill.job" <-
   function(job)

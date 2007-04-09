@@ -1,4 +1,4 @@
-# $Id: First.lib.R 475 2004-11-10 01:58:21Z csmith $
+# $Id: First.lib.R,v 1.3 2007/04/01 22:27:22 coultn Exp $
 
 .First.lib <- function(libname, pkgname)
 {
@@ -9,6 +9,7 @@
     stop("Rlsf has probably been detached. Please quit R.")
   if (.Call("lsf_initialize", PACKAGE = "Rlsf"))
     stop("LSF library cannot be initialized.")
+
   
 #  if (!library(Rmpi,logical.return = TRUE))
 #    {

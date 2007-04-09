@@ -1,7 +1,8 @@
-# $Id: lsf.submit.R 550 2005-02-22 04:10:44Z warnes $
+# $Id: lsf.submit.R,v 1.3 2007/04/01 22:27:22 coultn Exp $
 
 "lsf.submit" <-
-  function(func, ..., savelist=c(), packages=NULL, ncpus=1, debug=FALSE)
+  function(func, ..., savelist=c(), packages=NULL, ncpus=1, debug=FALSE
+  )
   # savelist is a character vector of *names* of objects to be
   # copied to the remote R session
   {
